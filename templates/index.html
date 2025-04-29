@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Recommendation System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Recommendation System 🌾</h1>
+        <form id="cropForm">
+            <input type="number" id="N" placeholder="Nitrogen (N)" required>
+            <input type="number" id="P" placeholder="Phosphorus (P)" required>
+            <input type="number" id="K" placeholder="Potassium (K)" required>
+            <input type="number" id="temperature" step="0.1" placeholder="Temperature (°C)" required>
+            <input type="number" id="humidity" step="0.1" placeholder="Humidity (%)" required>
+            <input type="number" id="ph" step="0.1" placeholder="Soil pH" required>
+            <input type="number" id="rainfall" step="0.1" placeholder="Rainfall (mm)" required>
+            <button type="submit">Predict Best Crop</button>
+        </form>
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
